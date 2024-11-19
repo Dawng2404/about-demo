@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+}
+.san1 {
+  background-color: #fab302;
+  color: #000;
+  padding: 5px;
+  font-size: 13px;
+}
+.san1 > p {
+  text-align: center;
+}
+
+section {
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  /* Use flexbox for navigation alignment */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left ul li:hover {
+  border-bottom: 2px solid #fab302;
+}
+
+.nav-left {
+  width: 40%;
+}
+
+.nav-right {
+  width: 15%;
+  /* padding: 20px; */
+}
+
+.nav-left ul,
+.nav-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-giua {
+  text-align: center;
+}
+
+.nav-giua img {
+  width: 15%;
+  height: 20%;
+  margin-right: 500px;
+}
+
+.nav-left ul li,
+.nav-right ul li {
+  display: inline-block;
+  color: #fff;
+}
+
+.nav-left ul li {
+  margin-left: 115px;
+  font-size: 13px;
+  margin-right: 10px;
+  /* Add space between items */
+}
+
+.nav-right ul li {
+  margin-left: 10px;
+}
+
+/*  */
+.menu {
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+}
+.menu ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+}
+.menu > ul > li > a {
+  text-decoration: none;
+  display: flex;
+  color: #fff;
+  /* gap:10px; */
+  padding-left: 10px;
+}
+.menu > ul > li > a:hover {
+  color: #fab302;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 130%; /* Để menu con nằm ngay dưới mục cha */
+  left: 0;
+  white-space: nowrap; /* Giúp các mục menu con không xuống dòng */
+  background-color: #000; /* Màu nền cho menu con */
+  /* Tạo khoảng cách dọc cho các mục */
+  border: 1px solid #fff;
+}
+
+.submenu li {
+  display: inline-block; /* Cài đặt các mục menu con nằm ngang */
+  padding: 5px; /* Tạo khoảng cách cho các mục menu */
+}
+
+.menu li:hover .submenu {
+  display: block; /* Hiển thị menu con khi hover mục cha */
+  font-size: 16px;
+}
+
+.submenu li a {
+  text-decoration: none; /* Bỏ gạch chân trong các liên kết */
+  color: #fff; /* Màu chữ */
+}
+
+.submenu li a:hover {
+  color: #fab302; /* Đổi màu chữ khi hover */
+}
+
+.success-message {
+  width: 500px;
+  margin-left: 530px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.error-message {
+  width: 500px;
+  margin-left: 530px;
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Icon search */
+.icon {
+  position: relative;
+  display: inline-block;
+}
+
+#searchInput {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 5px;
+  padding-left: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 0; /* Ban đầu, chiều rộng là 0 */
+  opacity: 0; /* Ban đầu, độ mờ là 0 */
+  transition: width 0.6s ease, opacity 1s ease, visibility 0s 0.6s; /* Tăng thời gian chuyển động lên 0.6s */
+}
+
+.icon:hover #searchInput {
+  width: 250px; /* Khi hover, chiều rộng mở rộng từ từ */
+  opacity: 1; /* Độ mờ dần thành 1 */
+  visibility: visible; /* Hiển thị input */
+  pointer-events: auto; /* Cho phép click vào input */
+  z-index: -1;
+}
+/* Icon user */
+.user-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 150%; /* Đặt menu dưới icon */
+  left: -15px;
+  color: #fff;
+  display: none; /* Ẩn menu con ban đầu */
+  background-color: #000; /* Màu nền cho menu */
+  border: 1px solid #fff; /* Viền của menu */
+  border-radius: 5px;
+  min-width: 150px; /* Đặt chiều rộng menu */
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+.user-menu li {
+  padding: 10px;
+}
+
+.user-menu li a {
+  text-decoration: none;
+  color: #fff;
+  /* display: block; */
+}
+
+.user-menu li a:hover {
+  color: #fab302; /* Màu nền khi hover vào menu item */
+}
+
+.icon:hover .user-menu {
+  display: block; /* Khi hover vào icon, hiển thị menu con */
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAFs - Fashion</title>
+    <link rel="stylesheet" href="/css/duan1.css" />
+  </head>
+  <body>
+    <div class="checkout-container">
+      <!-- Left Section -->
+      <div class="left-section">
+        <h2>Thông tin nhận hàng</h2>
+
+        <form>
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Họ và tên" />
+          <input type="tel" placeholder="Số điện thoại" />
+          <input type="text" placeholder="Địa chỉ" />
+          <select>
+            <option>Tỉnh thành</option>
+          </select>
+          <select>
+            <option>Quận huyện</option>
+          </select>
+          <select>
+            <option>Phường xã</option>
+          </select>
+          <textarea placeholder="Ghi chú (tùy chọn)"></textarea>
+        </form>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="middle-section">
+        <div class="shipping-payment-container">
+          <h2>Vận chuyển</h2>
+          <div class="shipping-method-container">
+            <h2>Vui lòng chọn phương thức vận chuyển</h2>
+          </div>
+
+          <h2>Thanh toán</h2>
+          <div class="payment-options">
+            <label
+              ><input type="radio" name="payment" /> Thanh toán qua
+              VNPAY-QR</label
+            >
+            <label
+              ><input type="radio" name="payment" /> Thanh toán khi giao hàng
+              (COD)</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="order-container">
+          <h2>Đơn hàng (2 sản phẩm)</h2>
+          <div class="product">
+            <img src="/imgs/sanpham_3.png" alt="" />
+            <p>DirtyCoins Comfy Logo iPhone Case - Red</p>
+            <p>138.600₫</p>
+          </div>
+          <div class="product">
+            <img src="/imgs/sanpham_4.png" alt="" />
+            <p>DC | DBZ Dragon Team T-Shirt - Cream</p>
+            <p>588.000₫</p>
+          </div>
+          <div class="discount-wrapper">
+            <input type="text" placeholder="Nhập mã giảm giá" />
+            <button>Áp dụng</button>
+          </div>
+          <div class="summary">
+            <p>Tạm tính</p>
+            <p>726.600₫</p>
+          </div>
+          <div class="summary">
+            <p>Phí vận chuyển</p>
+          </div>
+          <div class="total">
+            <p>Tổng cộng</p>
+            <p>726.600₫</p>
+          </div>
+          <div class="button-container">
+            <a href="#" class="back-button">Quay lại giỏ hàng</a>
+            <button class="order-button">Đặt hàng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
